@@ -72,3 +72,54 @@ ul {
   text-align: center;
   padding-left: 0;
 }
+
+
+#fade1 {
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 53%;
+    font-size: 33px;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 10s; /* Firefox < 16 */
+        -ms-animation: fadein 10s; /* Internet Explorer */
+         -o-animation: fadein 10s; /* Opera < 12.1 */
+            animation: fadein 10s;
+}
+
+#fade2 {
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 60%;
+    font-size: 33px;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fadein 20s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 20s; /* Firefox < 16 */
+        -ms-animation: fadein 20s; /* Internet Explorer */
+         -o-animation: fadein 20s; /* Opera < 12.1 */
+            animation: fadein 20s;
+}
+
+#fade3 {
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 59%;
+    font-size: 33px;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fadein 30s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 30s; /* Firefox < 16 */
+        -ms-animation: fadein 30s; /* Internet Explorer */
+         -o-animation: fadein 30s; /* Opera < 12.1 */
+            animation: fadein 30s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
