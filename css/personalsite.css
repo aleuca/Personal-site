@@ -1,3 +1,69 @@
+#fade1 {
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fade1 6s;
+       -moz-animation: fade1 6s;
+        -ms-animation: fade1 6s;
+         -o-animation: fade1 6s;
+            animation: fade1 6s;
+            animation-delay: 2s;
+            -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fade1 {
+    0% { opacity: 0; }
+    100%   { opacity: 1; }
+  }
+
+#fade2 {
+    opacity: 0;
+    position: absolute;
+    top: 34%;
+    left: 75%;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fade2 6s;
+       -moz-animation: fade2 6s;
+        -ms-animation: fade2 6s;
+         -o-animation: fade2 6s;
+            animation: fade2 6s;
+            animation-delay: 4s;
+            -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fade2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+#fade3 {
+    opacity: 0;
+    position: absolute;
+    top: 79.5%;
+    left: 55%;
+    text-align: center;
+    color: white;
+
+    -webkit-animation: fade3 6s;
+       -moz-animation: fade3 6s;
+        -ms-animation: fade3 6s;
+         -o-animation: fade3 6s;
+            animation: fade3 6s;
+            animation-delay: 6s;
+            -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fade3 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
 .list-element {
   display: inline-block;
   padding-left: 0;
@@ -9,6 +75,10 @@
   vertical-align: middle;
 }
 
+.intro-header {
+  color: black;
+  text-align: center;
+}
 
 li a:link {
   text-decoration: none;
@@ -19,12 +89,6 @@ li a:hover {
   position: relative;
   --box-shadow-color: #07bfac;
     box-shadow: 1px 1px 1px 1px var(--box-shadow-color);
-}
-
-.intro-header {
-  color: black;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
 }
 
 h1 {
@@ -46,7 +110,6 @@ a {
   padding-left: 0.6em;
   padding-right: 0.6em;
   color: #3D573D;
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 20;
 }
 
@@ -62,10 +125,12 @@ img {
 nav {
   background-color: white;
   width: 100%;
+  display: inline-block;
 }
 
 body {
   margin:0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 ul {
@@ -75,67 +140,8 @@ ul {
   padding-left: 0;
 }
 
-
-#fade1 {
-    animation-delay: 10s;
-    position: absolute;
-    margin-top: 22%;
-    margin-left: 53%;
-    font-size: 33px;
-    text-align: center;
-    color: white;
-
-    -webkit-animation: fade1 6s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fade1 6s; /* Firefox < 16 */
-        -ms-animation: fade1 6s; /* Internet Explorer */
-         -o-animation: fade1 6s; /* Opera < 12.1 */
-            animation: fade1 6s;
+p {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-shadow: 2px 2px 2px #5F5F5F;
 }
-
-@keyframes fade1 {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-#fade2 {
-    animation-delay: 20s;
-    position: absolute;
-    margin-top: 26%;
-    margin-left: 58%;
-    font-size: 33px;
-    text-align: center;
-    color: white;
-
-    -webkit-animation: fade2 6s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fade2 6s; /* Firefox < 16 */
-        -ms-animation: fade2 6s; /* Internet Explorer */
-         -o-animation: fade2 6s; /* Opera < 12.1 */
-            animation: fade2 6s;
-}
-
-@keyframes fade2 {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-#fade3 {
-    animation-delay: 30s;
-    position: absolute;
-    margin-top: 34%;
-    margin-left: 57%;
-    font-size: 33px;
-    text-align: center;
-    color: white;
-
-    -webkit-animation: fade3 6s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fade3 6s; /* Firefox < 16 */
-        -ms-animation: fade3 6s; /* Internet Explorer */
-         -o-animation: fade3 6s; /* Opera < 12.1 */
-            animation: fade3 6s;
-
-}
-
-@keyframes fade3 {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
