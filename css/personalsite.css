@@ -1,3 +1,5 @@
+/*affects all pages on site*/
+
 .list-element {
   display: inline-block;
   padding-left: 0;
@@ -7,91 +9,6 @@
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-}
-
-.story {
-  color: white;
-  font-size: 19px;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  height:100%;
-  z-index:-1;
-  left: 0;
-  object-fit: cover;
-}
-
-.homepage-nav {
- border-bottom: 1px solid #3D573D;
-}
-
-.homepage {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-
-.aboutme {
-  margin-top: 5%;
-  margin-right: 15%;
-  display: inline-block;
-  margin-left: 9%;
-}
-
-.mystory {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-  background: #085078;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.radius{
-  shape-outside: circle(50%) margin-box;
-  width: 300px;
-  height:300px;
-  float: left;
-  margin: 2em;
-}
-
-.intro-header {
-  color: black;
-  text-align: center;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  height:100%;
-  z-index:-1;
-  left: 0;
-  object-fit: cover;
-}
-
-.homepage-nav {
- border-bottom: 1px solid #3D573D;
-}
-
-.homepage-body {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.mystory-content {
-  margin-top: 5%;
-  margin-right: 15%;
-  display: inline-block;
-  margin-left: 9%;
-}
-
-.mystory-body {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-  background: #085078;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav {
@@ -118,18 +35,6 @@ ul {
   padding-left: 0;
 }
 
-h1 {
-  margin-top: 1.5%;
-  margin-bottom: 0;
-  font-size: 50px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 11;
-  padding-top: 0;
-}
-
 a {
   display: inline-block;
   padding-top: 1em;
@@ -140,6 +45,36 @@ a {
   font-size: 17px;
 }
 
+/*homepage specific (personalsite.html)*/
+
+.background {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index:-1;
+  left: 0;
+  object-fit: cover;
+}
+
+.homepage-nav {
+ border-bottom: 1px solid #3D573D;
+}
+
+.homepage {
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.intro-header {
+  color: black;
+  text-align: center;
+}
+
+.homepage-body {
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .homepage-tags {
   text-transform: uppercase;
   font-size: 35px;
@@ -147,6 +82,18 @@ a {
   color: white;
   opacity: 0;
   position: absolute;
+}
+
+h1 {
+  margin-top: 1.5%;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 11;
+  padding-top: 0;
 }
 
 @keyframes fade1 {
@@ -206,6 +153,7 @@ a {
 }
 
 @media all and (min-width: 721px) {
+  
   #fade1 {
       top: 25%;
       left: 17%;
@@ -243,5 +191,59 @@ a {
               animation: fade3 6s;
               animation-delay: 6s;
               -webkit-animation-fill-mode: forwards;
+  }
+}
+
+
+
+/*aboutme specific (mystory.html)*/
+
+.mystory {
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.mystory-content-div {
+  padding: 5%;
+  display: inline-block;
+  color: white;
+  font-size: 19px;
+}
+
+.mystory-body {
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media all and (max-width: 700px) {
+  .radius {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+  }
+
+  .story-text {
+    margin: 15% auto;
+    clear: both;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 701px) {
+  .radius {
+    shape-outside: circle(50%) margin-box;
+    width: 300px;
+    height:300px;
+    float: left;
+    margin: 2em;
   }
 }
