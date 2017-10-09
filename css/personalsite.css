@@ -45,6 +45,14 @@ a {
   font-size: 17px;
 }
 
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
 /*homepage specific (personalsite.html)*/
 
 .background {
@@ -62,17 +70,11 @@ a {
 
 .homepage {
   margin:0;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .intro-header {
   color: black;
   text-align: center;
-}
-
-.homepage-body {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .homepage-tags {
@@ -153,7 +155,7 @@ h5 {
 }
 
 @media all and (min-width: 721px) {
-  
+
   #fade1 {
       top: 25%;
       left: 17%;
@@ -198,14 +200,6 @@ h5 {
 
 /*aboutme specific (mystory.html)*/
 
-.mystory {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-  background: #085078;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .mystory-content-div {
   padding: 5%;
   display: inline-block;
@@ -214,8 +208,6 @@ h5 {
 }
 
 .mystory-body {
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
   background: #085078;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -246,4 +238,58 @@ h5 {
     float: left;
     margin: 2em;
   }
+}
+
+/*myprojects specific (projects.html)*/
+
+.projects-nav {
+ border-bottom: 1px solid #3D573D;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 5%;
+}
+
+
+.projects-body {
+  text-align: center;
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.image-div {
+  display: inline-grid;
+  text-align: left;
+  color: black;
+}
+
+
+@media all and (min-width: 800px) {
+
+  .image-div {
+    width: 25%;
+    padding: 3%;
+  }
+
+}
+
+@media all and (max-width: 800px) and (min-width: 600px) {
+
+  .image-div {
+    width: 38%;
+    padding: 3%;
+  }
+
+}
+
+
+@media all and (max-width: 599px) {
+
+  .image-div {
+    width: 98%;
+    padding: 2%;
+  }
+
 }
